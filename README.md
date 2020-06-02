@@ -10,7 +10,8 @@ https://www.youtube.com/watch?v=spUNpyF58BY
 alt="The Video" width="240" height="180" border="10" /></a>
 
 It then goes into detail about what PI is to the fourier transformation, giving a few formulas and building up to the fourier transformation. 
-Finally it gets to the application showing the computations of the fourier transformation and their graphs at each step. 
+Finally it gets to the application showing the computations of the fourier transformation and their graphs at each step.
+
 ![alt text](https://i.imgur.com/0V9eAAc.png “The Application”)
 
 ## Errata
