@@ -25,7 +25,7 @@
 				<br/><br/>
 				The Fourier Transformation can be represented in its base form as follows:
 				<br>
-				<img src="fourier.gif"/>
+				<img src="imgs/fourier.gif"/>
 				<br/><br/>
 				Such That:<br/>
 				<i>f</i> is our input frequency.<br/>
@@ -37,13 +37,13 @@
 				<br/></br>
 				However since we will only be using pure infinitely repeating frequencies in hertz to build our example we can simplify this to be more relevant
 				to the situation:<br/>
-				<img src="fourierMod.gif"/>
+				<img src="imgs/fourierMod.gif"/>
 				<br/><br/>
 				The key to understanding where pi comes in here is this segment of the equation:<br/><br/>
-				<img src="e^-2pifti.gif"/>
+				<img src="imgs/e^-2pifti.gif"/>
 				<br/><br/>
 				This is portion is called Euler's equation and can be written more standardly as:<br/><br/>
-				<img src="e^xi.gif">
+				<img src="imgs/e^xi.gif">
 				<br/><br/>
 				such that: <br/>
 				<i>e</i> is Euler's number, 2.718281828459...<br/>
@@ -54,18 +54,18 @@
 				When graphed on the complex plain this will result in a complex point on a complex unit circle <i>x</i> radians around the origin.
 				This particular property creates the relationship:
 				<br/><br/>
-				<img src="e^pii.gif">
+				<img src="imgs/e^pii.gif">
 				<br/><br/>
 				and
 				<br/><br/>
-				<img src="sincos.gif">
+				<img src="imgs/sincos.gif">
 				<br/><br/>
 				which we will utilize later to compute the Fourier transformation. 
 				<br/><br/>
 				This leaves us looking at what our <i>x</i> is in this case of Euler's within the Fourier transformation.
 				It should be clear that:
 				<br/><br/>
-				<img src="2pift.gif">
+				<img src="imgs/2pift.gif">
 				<br/><br/>
 				But what do these numbers mean? How do they impact the radians were supposed to travel? One helpful way I found to think about this
 				is to think of them as having units. <i>t</i> in seconds and <i>f</i> in Hertz (1/seconds) these both cancel out when multiplying them,
@@ -96,17 +96,17 @@
 					<button onclick="newItem()">Update</button>
 					<button onclick="show()">Hide All Freqs</button>
 					<p>Sum of Frequencies</p>
-					<img src="g(t).gif" class="centerimg"/><br/>
+					<img src="imgs/g(t).gif" class="centerimg"/><br/>
 					<canvas id="sum" onkeyup="graphSum(this.getContext('2d'))"></canvas>
 					<div id="fwraper"></div>
 				</div>
 				<div class="inline">
-					<img src="c(x).gif" class="centerimg"/>
+					<img src="imgs/c(x).gif" class="centerimg"/>
 					<p>using Euler's equation to wrap <i>g(t)</i> around the origin in the complex plain</p>
 					<canvas id="wrap" height="300" width="300" onkeyup="graphWrap(this.getContext('2d'))"></canvas>
 				</div>
 				<div class="inline">
-					<img src="ghat.gif" class="centerimg"/>
+					<img src="imgs/ghat.gif" class="centerimg"/>
 					<p>Real portion of <i>g{hat}(t)</i>: wave crests at input frequencies</p>
 					<canvas id="fourier" onkeyup="graphFourierReal(this.getContext('2d'))"></canvas>
 					<p>Complex portion of <i>g{hat}(t)</i>: x-intercepts at input frequencies</p>
